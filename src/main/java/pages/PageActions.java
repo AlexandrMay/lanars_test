@@ -91,10 +91,6 @@ public class PageActions {
         return counter;
     }
 
-    public boolean listsMatcher(){
-        return siteMismatches() == countingOfMismatches();
-    }
-
     public void scrollToElement(String text){
         log.info("User scrolls to " + text + " element");
         laptopsTable.elementOfTableByText(text, laptopsCategories, laptopCategory).scrollIntoView(true);
@@ -120,12 +116,4 @@ public class PageActions {
         log.info("User clicks to " + buttonName);
         $(xpath(String.format(comparingItemsButton, buttonName))).click();
     }
-
-
-
-
-
-
-
-
 }

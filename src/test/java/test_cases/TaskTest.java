@@ -31,7 +31,7 @@ public class TaskTest implements PropertiesLoader {
         mainPage.compareClick();
         mainPage.compareButtonClick("Сравнить эти товары");
         mainPage.goToSiteMismatches();
-        Assert.assertTrue(mainPage.listsMatcher());
+        Assert.assertEquals(mainPage.siteMismatches(), mainPage.countingOfMismatches());
 }
 
 
